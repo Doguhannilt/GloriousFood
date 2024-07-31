@@ -48,15 +48,17 @@
     - **A)** All selected orders and their associated costs.
     - **B)** Total payment amount.
     - **C)** Option to delete payments by ID.
-
+      
+- **Search Bar Development**
+  - Creating a dynamic search bar
+ 
 ---
 
 ## Future Enhancements
 
 - Implement a login system to allow users to manage their accounts securely.
+- When you can log in to the app, you can order; otherwise, it will be impossible. (*)
 - Add functionality to enable users to mark items as favorites for easy access.
 - Refine UI/UX based on user feedback.
-- Expand functionality with additional features.
-- Optimize performance and ensure cross-platform compatibility.
 
 
