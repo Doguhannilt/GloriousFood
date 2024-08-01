@@ -55,7 +55,6 @@
 - Your card information will be taken by the Redux and I will use it in the payment process.
 - And your all information will be stored in the JWT 
 - You can update your profile.
-- 
  
 ---
 
