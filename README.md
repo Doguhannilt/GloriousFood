@@ -51,6 +51,11 @@
 
 - Implement a login system to allow users to manage their accounts securely.
 - When you can log in to the app, you can order; otherwise, it will be impossible. (*)
+- When you log in to the app, there are going to be three options: *Profile*, *Cards*, and Log out. I will use JWT and Redux.
+- Your card information will be taken by the Redux and I will use it in the payment process.
+- And your all information will be stored in the JWT 
+- You can update your profile.
+- 
  
 ---
 
