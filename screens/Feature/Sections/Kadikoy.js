@@ -17,7 +17,7 @@ export default function IstanbulKadikoyFeatured() {
 
         if (selectedRestaurant) {
             dispatch(takeAllInformation(selectedRestaurant));
-            navigation.navigate('Details'); 
+            navigation.navigate('Details');
         }
 
 
@@ -26,7 +26,7 @@ export default function IstanbulKadikoyFeatured() {
     return (
         <View className="pl-4">
             <Text className="text-2xl font-bold ml-2">Istanbul - Kadikoy</Text>
-            <Text className="text-sm text-gray-300 ml-2">Istanbul dishes for you!</Text>
+            <Text className="text-sm text-gray-300 ml-2">Kadikoy dishes for you!</Text>
             <ScrollView
                 contentContainerStyle={{ paddingBottom: 20, paddingTop: 10 }}
                 horizontal

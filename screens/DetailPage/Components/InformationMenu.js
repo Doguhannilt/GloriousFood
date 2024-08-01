@@ -6,6 +6,10 @@ const InformationMenu = ({ restaurant }) => {
         <View className="p-4 bg-gray-50">
             <Text className="text-2xl font-bold mb-2">Information</Text>
             <View className="mb-4">
+                <Text className="text-lg font-semibold text-gray-800">Description:</Text>
+                <Text className="text-gray-600">{restaurant.Description}</Text>
+            </View>
+            <View className="mb-4">
                 <Text className="text-lg font-semibold text-gray-800">Address:</Text>
                 <Text className="text-gray-600">{restaurant.Address}</Text>
             </View>

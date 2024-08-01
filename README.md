@@ -32,12 +32,6 @@
   - Designed a modern user interface with Tailwind CSS.
   - Created sections: Header, Menu, and Information.
 
----
-
-## IN PROCESS
-
-### Order Management and Payment Configuration
-
 - **Redux Payment Configuration**
   - Configured Redux for managing payment state, including selected orders and total costs.
   - Implemented functionality to clear the payment state when needed.
@@ -51,13 +45,18 @@
       
 - **Search Bar Development**
   - Creating a dynamic search bar
+---
+
+## IN PROCESS
+
+- Implement a login system to allow users to manage their accounts securely.
+- When you can log in to the app, you can order; otherwise, it will be impossible. (*)
  
 ---
 
 ## Future Enhancements
 
-- Implement a login system to allow users to manage their accounts securely.
-- When you can log in to the app, you can order; otherwise, it will be impossible. (*)
+
 - Add functionality to enable users to mark items as favorites for easy access.
 - Refine UI/UX based on user feedback.
 

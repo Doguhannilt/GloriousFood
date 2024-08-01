@@ -6,10 +6,10 @@ import { categories } from '../../library/Category'
 const Categories = () => {
     return (
         <ScrollView
-            className=" ml-2"
+            className=" pl-1 mt-16 "
             contentContainerStyle={{
                 marginBottom: 0,
-                paddingTop: 10
+                
             }}
             horizontal
             showsHorizontalScrollIndicator={false}

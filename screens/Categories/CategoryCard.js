@@ -22,7 +22,7 @@ export default function CategoryCard({ imgUrl, title, id }) {
         className="h-28 w-20 rounded"
       />
       <Text
-        className="absolute bottom-1 left-1 text-white font-bold">{title}</Text>
+        className="absolute bottom-2 left-1 text-white font-bold">{title}</Text>
     </TouchableOpacity>
   )
 }
