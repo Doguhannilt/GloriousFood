@@ -4,6 +4,10 @@
 
 GloriousFood is a modern food ordering application designed to allow users to manage their food orders and securely store their credit card information. The project is built using React Native, Redux, and AsyncStorage.
 
+<div align="center">
+<img src="https://github.com/user-attachments/assets/3ade490d-1855-4cbb-9af3-c9b251484f81" width='500'/>
+</div>
+
 # VIDEO
 <div align="center">
   <video width="auto" src="https://github.com/user-attachments/assets/38748ae8-a9ef-4c60-b55b-1fa32c589cb6" / >
