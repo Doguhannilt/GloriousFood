@@ -45,12 +45,15 @@
       
 - **Search Bar Development**
   - Creating a dynamic search bar
+ 
+- **Creating A Database**
+    - Implement a login system to allow users to manage their accounts securely.
+    - I will create a database with the help of the MongoDB
 ---
 
 ## IN PROCESS
 
-- Implement a login system to allow users to manage their accounts securely.
-- I will create a database with the help of the MongoDB
+
 - I will use RTK Query, JWT for the front-end, Express | Mongoose for the back-end 
 - When you can log in to the app, you can order; otherwise, it will be impossible. (*)
 - When you log in to the app, there are going to be three options: *Profile*, *Cards*, and Log out. I will use JWT and Redux.
