@@ -15,32 +15,32 @@ export const IstanbulFeaturedLibrary = [
         "Menu": [
             {
                 "id": 1,
-                "Name": "Appetizer Platter",
+                "Dish": "Appetizer Platter",
                 "Price": "₺150"
             },
             {
                 "id": 2,
-                "Name": "Grilled Salmon",
+                "Dish": "Grilled Salmon",
                 "Price": "₺250"
             },
             {
                 "id": 3,
-                "Name": "Ribeye Steak",
+                "Dish": "Ribeye Steak",
                 "Price": "₺350"
             },
             {
                 "id": 4,
-                "Name": "Chocolate Lava Cake",
+                "Dish": "Chocolate Lava Cake",
                 "Price": "₺100"
             },
             {
                 "id": 5,
-                "Name": "House Red Wine",
+                "Dish": "House Red Wine",
                 "Price": "₺200 per bottle"
             },
             {
                 "id": 6,
-                "Name": "House White Wine",
+                "Dish": "House White Wine",
                 "Price": "₺180 per bottle"
             }
         ]
@@ -61,32 +61,32 @@ export const IstanbulFeaturedLibrary = [
         "Menu": [
             {
                 "id": 1,
-                "Name": "Meze Platter",
+                "Dish": "Meze Platter",
                 "Price": "₺120"
             },
             {
                 "id": 2,
-                "Name": "Grilled Lamb Chops",
+                "Dish": "Grilled Lamb Chops",
                 "Price": "₺220"
             },
             {
                 "id": 3,
-                "Name": "Seafood Paella",
+                "Dish": "Seafood Paella",
                 "Price": "₺300"
             },
             {
                 "id": 4,
-                "Name": "Baklava",
+                "Dish": "Baklava",
                 "Price": "₺80"
             },
             {
                 "id": 5,
-                "Name": "Rakı",
+                "Dish": "Rakı",
                 "Price": "₺250 per bottle"
             },
             {
                 "id": 6,
-                "Name": "Turkish Wine",
+                "Dish": "Turkish Wine",
                 "Price": "₺180 per bottle"
             }
         ]
@@ -107,32 +107,32 @@ export const IstanbulFeaturedLibrary = [
         "Menu": [
             {
                 "id": 1,
-                "Name": "Kuzu Tandir",
+                "Dish": "Kuzu Tandir",
                 "Price": "₺270"
             },
             {
                 "id": 2,
-                "Name": "İskender Kebab",
+                "Dish": "İskender Kebab",
                 "Price": "₺230"
             },
             {
                 "id": 3,
-                "Name": "Pide",
+                "Dish": "Pide",
                 "Price": "₺150"
             },
             {
                 "id": 4,
-                "Name": "Künefe",
+                "Dish": "Künefe",
                 "Price": "₺90"
             },
             {
                 "id": 5,
-                "Name": "Şarap",
+                "Dish": "Şarap",
                 "Price": "₺220 per bottle"
             },
             {
                 "id": 6,
-                "Name": "Bira",
+                "Dish": "Bira",
                 "Price": "₺50 per bottle"
             }
         ]
@@ -153,32 +153,32 @@ export const IstanbulFeaturedLibrary = [
         "Menu": [
             {
                 "id": 1,
-                "Name": "Grilled Ribeye",
+                "Dish": "Grilled Ribeye",
                 "Price": "₺320"
             },
             {
                 "id": 2,
-                "Name": "Mixed Grill Platter",
+                "Dish": "Mixed Grill Platter",
                 "Price": "₺350"
             },
             {
                 "id": 3,
-                "Name": "BBQ Chicken Wings",
+                "Dish": "BBQ Chicken Wings",
                 "Price": "₺180"
             },
             {
                 "id": 4,
-                "Name": "Apple Pie",
+                "Dish": "Apple Pie",
                 "Price": "₺85"
             },
             {
                 "id": 5,
-                "Name": "Red Wine",
+                "Dish": "Red Wine",
                 "Price": "₺250 per bottle"
             },
             {
                 "id": 6,
-                "Name": "Sparkling Water",
+                "Dish": "Sparkling Water",
                 "Price": "₺40 per bottle"
             }
         ]
@@ -199,32 +199,32 @@ export const IstanbulFeaturedLibrary = [
         "Menu": [
             {
                 "id": 1,
-                "Name": "Hummus",
+                "Dish": "Hummus",
                 "Price": "₺90"
             },
             {
                 "id": 2,
-                "Name": "Ezme",
+                "Dish": "Ezme",
                 "Price": "₺70"
             },
             {
                 "id": 3,
-                "Name": "Grilled Sea Bass",
+                "Dish": "Grilled Sea Bass",
                 "Price": "₺230"
             },
             {
                 "id": 4,
-                "Name": "Baklava",
+                "Dish": "Baklava",
                 "Price": "₺80"
             },
             {
                 "id": 5,
-                "Name": "Şarap",
+                "Dish": "Şarap",
                 "Price": "₺200 per bottle"
             },
             {
                 "id": 6,
-                "Name": "Rakı",
+                "Dish": "Rakı",
                 "Price": "₺220 per bottle"
             }
         ]
