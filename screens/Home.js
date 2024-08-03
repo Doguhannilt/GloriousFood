@@ -1,15 +1,40 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import { View, Text, SafeAreaView, Image, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+
+
+
+// Icons
 import { UserIcon } from "react-native-heroicons/outline";
+
+
+// PAGES
 import Search from './HomeComponents/Search';
 import Categories from './Categories/Categories';
 import FeaturedRows from './Feature/FeaturedRows';
 import OrderIconForHome from './Order/OrderIconForHome';
 
+// Image
+import unknownImage from '../library/Image/unknown.png'
+import Header from '../library/Image/logo.png'
+
+// Redux
+import { useDispatch, useSelector } from 'react-redux';
+
+import { fetchUserInfo, fetchUserInfoFromStorage } from '../redux/api/auth/authSlice';
+
+
+
 export default function Home() {
+
     const navigation = useNavigation();
     const scrollViewRef = useRef(null);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchUserInfoFromStorage());
+    }, [dispatch]);
+
 
     const handleScrollTo = (section) => {
         if (scrollViewRef.current) {
@@ -44,6 +69,16 @@ export default function Home() {
         navigation.navigate('Orders');
     };
 
+    const authHandlePress = () => {
+        navigation.navigate('Auth')
+    }
+
+    const profileHandlePress = () => {
+        navigation.navigate('Profile')
+    }
+
+    const userInfo = useSelector(state => state.auth.userInfo);
+
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView ref={scrollViewRef} contentContainerStyle={styles.scrollContainer} showsVerticalScrollIndicator={false}>
@@ -51,24 +86,43 @@ export default function Home() {
                 <View style={styles.header}>
 
                     {/* ORDER ICON AND THE ORDER PAGE */}
-                    <TouchableOpacity onPress={orderHandlePress}>
-                        <OrderIconForHome />
-                    </TouchableOpacity>
-
+                    {userInfo
+                        ?
+                        <TouchableOpacity onPress={orderHandlePress}>
+                            <OrderIconForHome />
+                        </TouchableOpacity>
+                        :
+                        null}
                     {/* HEADER */}
                     <Image
-                        source={{ uri: "https://links.papareact.com/wru" }}
+                        source={Header}
                         style={styles.logo}
                     />
                     <View style={styles.headerText}>
-                        <Text style={styles.deliverNowText}>Deliver Now!</Text>
+
+                        <Text style={styles.deliverNowText}>Glorious Food</Text>
                         <Text style={styles.currentLocationText}>
                             Current Location
                         </Text>
                     </View>
-                    <View style={styles.userIconContainer}>
-                        <UserIcon size={35} color="#800080" />
-                    </View>
+
+                    {userInfo
+                        ?
+                        <TouchableOpacity onPress={profileHandlePress}>
+                            <Image
+                                className="h-10 w-10 rounded-full "
+                                source={unknownImage}
+                            />
+                        </TouchableOpacity>
+
+                        :
+                        <View style={styles.userIconContainer}>
+                            <TouchableOpacity onPress={authHandlePress}>
+                                <UserIcon size={35} color="#800080" />
+                            </TouchableOpacity>
+                        </View>
+                    }
+
                 </View>
 
                 {/* SEARCH BAR */}
@@ -99,14 +153,14 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         padding: 10,
-        paddingLeft: 0,
+        paddingLeft: 10,
         marginTop: 20,
 
     },
     logo: {
         height: 40,
         width: 40,
-        backgroundColor: '#D1D5DB', // Gray color
+        // Gray color
         borderRadius: 20,
     },
     headerText: {

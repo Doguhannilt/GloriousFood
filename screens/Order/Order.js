@@ -1,15 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, TouchableOpacity, SafeAreaView } from 'react-native';
-import { useSelector, useDispatch } from 'react-redux';
-import { clearCost, decrementQuantity,removeItem , incrementQuantity } from '../../redux/slices/OrderSlice';
 
+
+    // REDUX
+import { useSelector, useDispatch } from 'react-redux';
+import { clearCost, decrementQuantity, removeItem, incrementQuantity } from '../../redux/slices/OrderSlice';
+import { fetchUserInfoFromStorage } from '../../redux/api/auth/authSlice';
 
 
 const OrderScreen = () => {
+    
+    const [userChecked, setUserChecked] = useState(false);
+
+
+    const dispatch = useDispatch();
     const items = useSelector((state) => state.order.items);
     const payment = useSelector((state) => state.order.payment);
-    const dispatch = useDispatch();
+    const userInfo = useSelector((state) => state.auth.userInfo);
 
+
+    // USEEFFECT
+    useEffect(() => {
+        const checkUserInfo = async () => {
+            await dispatch(fetchUserInfoFromStorage());
+            setUserChecked(true);
+        };
+        checkUserInfo();
+    }, [dispatch]);
+
+    useEffect(() => {
+        if (userChecked && !userInfo) {
+            dispatch(clearCost());
+        }
+    }, [userInfo, userChecked, dispatch]);
+
+
+
+    // FUNCTIONS
     const handleIncrement = (itemId) => {
         dispatch(incrementQuantity(itemId));
     };

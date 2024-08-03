@@ -32,8 +32,7 @@ const createUser = async (req, res) => {
 
         // Generate and set the token
         const token = implementToken(res, newUser._id);
-        console.log('JWT Token:', token); // Log the token
-
+       
         // Respond with user info
         res.status(201).json({
             _id: newUser._id,

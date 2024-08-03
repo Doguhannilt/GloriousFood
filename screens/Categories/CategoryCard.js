@@ -7,12 +7,12 @@ export default function CategoryCard({ imgUrl, title, id }) {
 
   const handlePress = () => {
     // navigation.navigate('Detail', { id });
-    console.log(id)
+
   };
 
   return (
     <TouchableOpacity
-      className="mr-2 relative pb-2"
+      className="mr-2 relative pb-2 mb-5"
       onPress={handlePress}
     >
       <Image

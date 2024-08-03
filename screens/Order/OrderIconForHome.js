@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const OrderIconForHome = () => {
     const items = useSelector((state) => state.order.items);
-    console.log(items);
+
 
     return (
         <View style={styles.container}>

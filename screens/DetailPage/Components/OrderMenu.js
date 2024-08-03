@@ -6,16 +6,8 @@ import { takeAllCosts, takeAllOrders } from '../../../redux/slices/OrderSlice';
 const OrderMenu = ({ restaurant }) => {
 
     const [selectedItem, setSelectedItem] = useState(null);
-
     const menuList = restaurant?.Menu || [];
-
     const dispatch = useDispatch();
-
-    // DEBUGGING
-    // const items = useSelector((state) => state.order.items);
-    // const payment = useSelector((state) => state.order.payment);
-
-
 
     const handleItemPress = (item) => {
         setSelectedItem(item);

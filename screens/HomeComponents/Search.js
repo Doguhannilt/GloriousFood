@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         right: 0,
         zIndex: 10,
         padding: 16,
-        marginTop: 78
+        marginTop: 78,
     },
     searchContainer: {
         flexDirection: 'row',
