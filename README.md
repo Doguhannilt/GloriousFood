@@ -49,17 +49,24 @@
 - **Creating A Database**
     - Implement a login system to allow users to manage their accounts securely.
     - I will create a database with the help of the MongoDB
+ 
+- **Redux&User Process**
+  - I will use RTK Query, JWT for the front-end, Express | Mongoose for the back-end 
+  - When you can log in to the app, you can order; otherwise, it will be impossible. (*)
+  - When you log in to the app, there are going to be three options: *Profile*, *Cards*, and Log out. I will use JWT and Redux.
+  - Your card information will be taken by the Redux 
+  - And all your information will be stored in the JWT 
+
+-**Validation**
+  - You can't go to the Pages [Order, Payment, OrderList] if you are not logged in
+
 ---
 
 ## IN PROCESS
 
+Nothing yet...
 
-- I will use RTK Query, JWT for the front-end, Express | Mongoose for the back-end 
-- When you can log in to the app, you can order; otherwise, it will be impossible. (*)
-- When you log in to the app, there are going to be three options: *Profile*, *Cards*, and Log out. I will use JWT and Redux.
-- Your card information will be taken by the Redux and I will use it in the payment process.
-- And your all information will be stored in the JWT 
-- You can update your profile.
+
  
 ---
 
