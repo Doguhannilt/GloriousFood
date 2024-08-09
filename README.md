@@ -46,49 +46,48 @@ GloriousFood is a modern food ordering application designed to allow users to ma
 ### React Native
 
 | Package Name                               | Version     | Description                                    |
-|--------------------------------------------|-------------|------------------------------------------------|
-| `@expo/metro-runtime`                     | ~3.2.1      | Metro runtime for Expo                        |
-| `@react-native-async-storage/async-storage`| ^1.24.0     | Asynchronous storage for React Native         |
-| `@react-navigation/native`                | ^6.1.18     | React Navigation for managing navigation      |
-| `@react-navigation/native-stack`          | ^6.11.0     | Stack navigator for React Navigation          |
-| `@reduxjs/toolkit`                        | ^2.2.7      | Redux toolkit for state management            |
-| `axios`                                   | ^1.7.3      | HTTP client for making requests               |
-| `expo`                                    | ~51.0.23    | Expo SDK for React Native                      |
-| `expo-status-bar`                         | ~1.12.1     | Status bar for Expo apps                      |
-| `nativewind`                              | ^2.0.11     | Tailwind CSS utilities for React Native       |
-| `react`                                   | 18.2.0      | React library                                 |
-| `react-dom`                               | 18.2.0      | DOM bindings for React                        |
-| `react-native`                            | 0.74.3      | React Native framework                        |
-| `react-native-credit-card-input`           | ^1.0.0      | Credit card input component for React Native  |
-| `react-native-dotenv`                      | ^3.4.11     | Environment variables for React Native        |
-| `react-native-heroicons`                   | ^4.0.0      | Heroicons for React Native                    |
-| `react-native-safe-area-context`           | 4.10.5      | Safe area context for React Native            |
-| `react-native-screens`                     | 3.31.1      | Screens for React Native                      |
-| `react-native-svg`                        | ^15.4.0     | SVG support for React Native                  |
-| `react-native-toast-message`               | ^2.2.0      | Toast messages for React Native               |
-| `react-native-vector-icons`                 | ^10.1.0     | Vector icons for React Native                 |
-| `react-native-web`                        | ~0.19.10    | Web support for React Native                  |
-| `react-redux`                             | ^9.1.2      | React bindings for Redux                      |
-| `tailwindcss`                             | ^3.3.2      | Tailwind CSS for styling                      |
-| `@babel/core`                             | ^7.20.0     | Babel core for transpiling                    |
+|-----------------------------------------|-----------|---------------------------------------------|
+| `@expo/metro-runtime`                  | 3.2.1     | Metro runtime for Expo                      |
+| `@react-native-async-storage/async-storage` | 1.24.0   | Asynchronous storage for React Native       |
+| `@react-navigation/native`             | 6.1.18    | React Navigation for managing navigation    |
+| `@react-navigation/native-stack`       | 6.11.0    | Stack navigator for React Navigation        |
+| `@reduxjs/toolkit`                     | 2.2.7     | Redux toolkit for state management          |
+| `axios`                                | 1.7.3     | HTTP client for making requests             |
+| `expo`                                 | 51.0.23   | Expo SDK for React Native                    |
+| `expo-status-bar`                      | 1.12.1    | Status bar for Expo apps                    |
+| `nativewind`                           | 2.0.11    | Tailwind CSS utilities for React Native     |
+| `react`                                | 18.2.0    | React library                               |
+| `react-dom`                            | 18.2.0    | DOM bindings for React                      |
+| `react-native`                         | 0.74.3    | React Native framework                      |
+| `react-native-credit-card-input`        | 1.0.0     | Credit card input component for React Native|
+| `react-native-dotenv`                   | 3.4.11    | Environment variables for React Native      |
+| `react-native-heroicons`                | 4.0.0     | Heroicons for React Native                  |
+| `react-native-safe-area-context`        | 4.10.5    | Safe area context for React Native          |
+| `react-native-screens`                  | 3.31.1    | Screens for React Native                    |
+| `react-native-svg`                     | 15.4.0    | SVG support for React Native                |
+| `react-native-toast-message`            | 2.2.0     | Toast messages for React Native             |
+| `react-native-vector-icons`              | 10.1.0    | Vector icons for React Native               |
+| `react-native-web`                     | 0.19.10   | Web support for React Native                |
+| `react-redux`                          | 9.1.2     | React bindings for Redux                    |
+| `tailwindcss`                          | 3.3.2     | Tailwind CSS for styling                    |
+| `@babel/core`                          | 7.20.0    | Babel core for transpiling                  |
 
 ### Backend
 
-| Package Name                               | Version     | Description                                    |
-|--------------------------------------------|-------------|------------------------------------------------|
-| `bcryptjs`                                | ^2.4.3      | Password hashing                             |
-| `cookie-parser`                           | ^1.4.6      | Cookie parsing middleware for Express         |
-| `cors`                                    | ^2.8.5      | CORS middleware for Express                   |
-| `dotenv`                                  | ^16.4.5     | Environment variables for Node.js             |
-| `express`                                 | ^4.19.2     | Web framework for Node.js                     |
-| `express-async-handler`                   | ^1.2.0      | Async handler for Express                     |
-| `express-formidable`                      | ^1.2.0      | Middleware for handling form data             |
-| `jsonwebtoken`                            | ^9.0.2      | JWT for authentication                        |
-| `mongoose`                                | ^8.5.2      | MongoDB ODM for Node.js                       |
-| `multer`                                  | ^1.4.5-lts.1| Middleware for handling file uploads          |
-| `nodemon`                                 | ^3.1.4      | Development server for Node.js                |
-| `react-native-dotenv`                     | ^3.4.11     | Environment variables for React Native (also used in backend for consistency) |
-
+| Paket Adı                               | Sürüm     | Açıklama                                    |
+|-----------------------------------------|-----------|---------------------------------------------|
+| `bcryptjs`                            | 2.4.3     | Password hashing                            |
+| `cookie-parser`                       | 1.4.6     | Cookie parsing middleware for Express       |
+| `cors`                                | 2.8.5     | CORS middleware for Express                 |
+| `dotenv`                              | 16.4.5    | Environment variables for Node.js           |
+| `express`                             | 4.19.2    | Web framework for Node.js                   |
+| `express-async-handler`               | 1.2.0     | Async handler for Express                   |
+| `express-formidable`                  | 1.2.0     | Middleware for handling form data           |
+| `jsonwebtoken`                        | 9.0.2     | JWT for authentication                      |
+| `mongoose`                            | 8.5.2     | MongoDB ODM for Node.js                     |
+| `multer`                              | 1.4.5-lts.1| Middleware for handling file uploads       |
+| `nodemon`                             | 3.1.4     | Development server for Node.js              |
+| `react-native-dotenv`                 | 3.4.11    | Environment variables for React Native (also used in backend for consistency) |
 
 ## Installation
 
